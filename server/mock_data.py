@@ -35,5 +35,13 @@ recent_transactions = load_json_file('transactions.json')
 # Load purchase orders
 purchase_orders = load_json_file('purchase_orders.json')
 
+# Restock orders start empty and are populated in-memory as users submit
+# orders via POST /api/restock-orders (no seed data, so no JSON file needed)
+restock_orders = []
+
+# Tasks start empty and are populated in-memory as users add tasks via
+# POST /api/tasks (no seed data, so no JSON file needed)
+tasks = []
+
 # All data is now loaded from JSON files in the data/ directory
 # This allows for easier maintenance and updates of the sample data
