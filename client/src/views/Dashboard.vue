@@ -517,6 +517,8 @@ export default {
                 unitsOrdered: 0,
                 revenue: 0,
                 stockLevel: invItem ? (invItem.quantity_on_hand > invItem.reorder_point ? 'In Stock' : 'Low Stock') : 'Unknown',
+                quantityOnHand: invItem?.quantity_on_hand ?? null,
+                reorderPoint: invItem?.reorder_point ?? null,
                 firstOrderDate: order.order_date
               }
             } else {

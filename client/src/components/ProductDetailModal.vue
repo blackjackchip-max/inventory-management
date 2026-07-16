@@ -52,12 +52,12 @@
 
               <div class="info-item">
                 <div class="info-label">Current Stock</div>
-                <div class="info-value">{{ product.quantityOnHand }} units</div>
+                <div class="info-value">{{ product.quantityOnHand ?? '—' }} units</div>
               </div>
 
               <div class="info-item">
                 <div class="info-label">Reorder Point</div>
-                <div class="info-value">{{ product.reorderPoint }} units</div>
+                <div class="info-value">{{ product.reorderPoint ?? '—' }} units</div>
               </div>
 
               <div class="info-item">
